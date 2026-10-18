@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Habia &amp; Saad | Nikkah Invitation</title>
+  <meta name="description" content="You are invited to the Nikkah of Habia Ahmed and Saad Shahid, Sunday 15 November 2026, Karachi.">
+  <meta name="theme-color" content="#8E3B4A">
+
+  <!-- WhatsApp / social preview. Replace the domain if your Vercel link is different. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Habia & Saad | Nikkah Invitation">
+  <meta property="og:description" content="Sunday, 15 November 2026 · 4:00 PM · Gulistan-e-Johar, Karachi">
+  <meta property="og:image" content="https://habia-saad-nikkah.vercel.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://habia-saad-nikkah.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%238E3B4A'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='serif' font-size='28' fill='%23D9BE8A'%3EH%26S%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap">
+
+  <link rel="preload" as="image" href="assets/curtain-left.webp">
+  <link rel="preload" as="image" href="assets/curtain-right.webp">
+  <link rel="preload" as="image" href="assets/wax-seal.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ GATE ============ -->
+  <div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="Invitation cover">
+    <img class="curtain curtain-left" src="assets/curtain-left.webp" alt="">
+    <img class="curtain curtain-right" src="assets/curtain-right.webp" alt="">
+    <div class="gate-center">
+      <p class="gate-for">You are invited</p>
+      <button class="seal" id="open-seal" type="button" aria-label="Open the invitation">
+        <span class="seal-half seal-left" aria-hidden="true"><span class="seal-mono">H<i>&amp;</i>S</span></span>
+        <span class="seal-half seal-right" aria-hidden="true"><span class="seal-mono">H<i>&amp;</i>S</span></span>
+      </button>
+      <p class="gate-hint">Tap the seal to open</p>
+    </div>
+  </div>
+
+  <button class="music" id="music" type="button" aria-label="Play nasheed" aria-pressed="false">
+    <svg class="icon-note" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <audio id="nasheed" src="assets/nasheed.mp3" preload="none" loop></audio>
+
+  <main>
+
+    <!-- ============ OPENING ============ -->
+    <section class="opening" aria-label="Opening">
+      <div class="layer layer-garland layer-left" data-speed="0.18"><img class="garland" src="assets/garland-left.webp" alt=""></div>
+      <div class="layer layer-garland layer-right" data-speed="0.18"><img class="garland" src="assets/garland-right.webp" alt=""></div>
+      <div class="layer layer-lantern lantern-a" data-speed="0.32"><img class="lantern" src="assets/lantern.webp" alt=""><span class="glow"></span></div>
+      <div class="layer layer-lantern lantern-b" data-speed="0.26"><img class="lantern" src="assets/lantern.webp" alt=""><span class="glow"></span></div>
+      <div class="petals" id="petals" aria-hidden="true"></div>
+
+      <div class="opening-copy">
+        <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <p class="opening-lead">The Nikkah of</p>
+        <h1 class="names">
+          <span class="name-a">Habia</span>
+          <span class="amp">&amp;</span>
+          <span class="name-b">Saad</span>
+        </h1>
+        <p class="opening-date">Sunday, 15 November 2026</p>
+      </div>
+    </section>
+
+    <!-- ============ COUPLE ============ -->
+    <section class="couple" aria-labelledby="qabool">
+      <h2 class="qabool" id="qabool">
+        <span class="qabool-ur" lang="ur" dir="rtl">قبول ہے</span>
+        <span class="qabool-en">Two words, one lifetime</span>
+      </h2>
+      <div class="stage" id="stage">
+        <div class="mehrab">
+          <img class="backdrop" src="assets/backdrop.webp" alt="" loading="lazy" data-speed="-0.08">
+        </div>
+        <img class="bride" src="assets/bride.webp" alt="Illustration of Habia, the bride, seated" loading="lazy">
+        <img class="groom" src="assets/groom.webp" alt="Illustration of Saad, the groom, seated" loading="lazy">
+        <img class="bloom bloom-left" src="assets/flowers-left.webp" alt="" loading="lazy">
+        <img class="bloom bloom-right" src="assets/flowers-right.webp" alt="" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ============ VERSE + FAMILIES ============ -->
+    <section class="vows" aria-label="Invitation">
+      <p class="ayah" lang="ar" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+      <p class="ayah-tr">“And among His signs is that He created for you spouses from among yourselves, that you may find tranquillity in them, and He placed between you affection and mercy.”</p>
+      <p class="ayah-ref">Surah Ar-Rum, 30:21</p>
+
+      <img class="divider" src="assets/divider.webp" alt="" loading="lazy">
+
+      <div class="families">
+        <img class="nikahnama" src="assets/nikahnama.webp" alt="" loading="lazy">
+        <p class="host">Mr. Zubair Ahmed</p>
+        <p>requests the pleasure of your company<br>at the Nikkah of his beloved daughter</p>
+        <p class="family-name">Habia Ahmed</p>
+        <p class="with">with</p>
+        <p class="family-name">Saad Shahid</p>
+        <p>son of Mr. Shahid</p>
+      </div>
+    </section>
+
+    <!-- ============ DETAILS ============ -->
+    <section class="details" aria-labelledby="details-title">
+      <h2 class="details-title" id="details-title">The Nikkah</h2>
+
+      <div class="when">
+        <span class="when-day">15</span>
+        <span class="when-rest">November 2026<br><em>Sunday</em></span>
+      </div>
+      <p class="when-time">at 4:00 in the afternoon</p>
+
+      <div class="venue">
+        <svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <p class="venue-name">Block 14, Gulistan-e-Johar</p>
+        <p class="venue-city">Karachi</p>
+        <a class="btn" href="https://www.google.com/maps/place/Block+14+Gulistan-e-Johar,+Karachi,+Pakistan/@24.9200439,67.1239841,16z/data=!3m1!4b1!4m6!3m5!1s0x3eb338e539947d23:0xe00254a39dad5c5b!8m2!3d24.9202211!4d67.1283775!16s%2Fg%2F11xb5j7sh" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+
+      <div class="countdown" aria-live="off">
+        <p class="countdown-label" id="countdown-label">Until we celebrate</p>
+        <div class="countdown-row">
+          <div><b data-cd="days">00</b><span>days</span></div>
+          <div><b data-cd="hours">00</b><span>hours</span></div>
+          <div><b data-cd="minutes">00</b><span>minutes</span></div>
+          <div><b data-cd="seconds">00</b><span>seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RSVP + CLOSING ============ -->
+    <section class="rsvp" aria-labelledby="rsvp-title">
+      <h2 class="rsvp-title" id="rsvp-title">Will you join us?</h2>
+      <p class="rsvp-lead">Let us know on WhatsApp, and keep Habia and Saad in your duas.</p>
+
+      <ul class="contacts">
+        <li>
+          <a class="contact" data-phone="03229274994" href="#" target="_blank" rel="noopener">
+            <span class="contact-name">Zubair Ahmed</span>
+            <span class="contact-num">0322 9274994</span>
+            <span class="contact-act">Message on WhatsApp</span>
+          </a>
+        </li>
+        <li>
+          <a class="contact" data-phone="03132329944" href="#" target="_blank" rel="noopener">
+            <span class="contact-name">Hammad Ahmed</span>
+            <span class="contact-num">0313 2329944</span>
+            <span class="contact-act">Message on WhatsApp</span>
+          </a>
+        </li>
+      </ul>
+
+      <img class="divider" src="assets/divider.webp" alt="" loading="lazy">
+
+      <p class="closing-names">Habia <span>&amp;</span> Saad</p>
+      <p class="closing-line">With love and duas,<br>the Ahmed family</p>
+    </section>
+  </main>
+
+  <div class="scroll-cue" id="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+  </div>
+
+  <script src="invitation.js" defer></script>
+</body>
+</html>

@@ -319,7 +319,7 @@ body.is-open .scroll-cue.is-hidden { opacity: 0; transition-delay: 0s; }
 }
 
 .layer-garland {
-  width: clamp(104px, 25vw, 300px);
+  width: clamp(196px, 25vw, 300px);
   z-index: 1;
 }
 
